@@ -1,0 +1,44 @@
+<svg width="500" height="650" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="white"/>
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="black" />
+        </marker>
+    </defs>
+    <g transform="translate(150, 50)">
+        <rect x="0" y="0" width="200" height="50" rx="25" fill="#f8f9fa" stroke="#343a40" stroke-width="2"/>
+        <text x="100" y="30" font-family="SimHei, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">开始</text>
+        
+        <path d="M 100 50 L 100 90" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+        
+        <rect x="-20" y="90" width="240" height="60" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+        <text x="100" y="125" font-family="SimHei, sans-serif" font-size="14" text-anchor="middle">S101: 采集用户生理/环境特征数据</text>
+        
+        <path d="M 100 150 L 100 190" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+        
+        <rect x="-20" y="190" width="240" height="60" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+        <text x="100" y="225" font-family="SimHei, sans-serif" font-size="14" text-anchor="middle">S102: 数据预处理、去噪与格式化</text>
+        
+        <path d="M 100 250 L 100 290" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+        
+        <rect x="-20" y="290" width="240" height="60" fill="#e9ecef" stroke="#343a40" stroke-width="2"/>
+        <text x="100" y="325" font-family="SimHei, sans-serif" font-size="14" text-anchor="middle">S103: 核心算法特征提取与模型推理</text>
+        
+        <path d="M 100 350 L 100 390" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+        
+        <polygon points="100,390 200,430 100,470 0,430" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+        <text x="100" y="435" font-family="SimHei, sans-serif" font-size="14" text-anchor="middle">S104: 是否存在异常/风险?</text>
+        
+        <!-- Yes branch -->
+        <path d="M 100 470 L 100 510" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="115" y="495" font-family="SimHei, sans-serif" font-size="14">是</text>
+        
+        <!-- No branch -->
+        <path d="M 200 430 L 260 430 L 260 120 L 230 120" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="220" y="420" font-family="SimHei, sans-serif" font-size="14">否</text>
+        
+        <rect x="-20" y="510" width="240" height="60" fill="#ffffff" stroke="#343a40" stroke-width="2"/>
+        <text x="100" y="545" font-family="SimHei, sans-serif" font-size="14" text-anchor="middle">S105: 触发本地报警及远程干预</text>
+    </g>
+    <text x="250" y="620" font-family="SimHei, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">图 2：数据处理方法流程图</text>
+</svg>
